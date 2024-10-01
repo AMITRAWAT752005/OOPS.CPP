@@ -39,7 +39,7 @@ public:
     }
 
     
-    bool operator == (complex& c) {
+    bool operator == (complex c) {
         return (real == c.real && imag == c.imag);
     }
 

@@ -70,10 +70,7 @@ int main()
    cin>>type;
       cout<<"enter the ammount:";
       cin>>amount;
-      /*cout<<"enter 1 for withdrawl and 0 for deposit";
-      cin>>y;
-      cout<<"enter new ammount :";
-      cin>>x;*/
+     
         op[i].bank_detail( account , name , type, amount);
         cout<<"PRESS '1' to deposite // Press '2' to withdraw // PRESS '0' to check balance"<<endl;
         cin>>y;
@@ -101,8 +98,5 @@ int main()
    
     }
    
-  /*  for(int i=0;i<n;i++ ){
-    op[i].checkout();
-    cout<<"////////////////////////////////////////////////////////////////////////////////////"<<endl;
-    }*/
+
 }

@@ -1,4 +1,3 @@
-/*Implement a C++ program to find the non-repeating characters in string*/
 
 #include <iostream>
 #include <string>
@@ -8,26 +7,20 @@ int main() {
     string str;
     cout << "Enter the String: ";   
     getline(cin, str);
-    
-    int freq[256] = {0}; // Array to store frequency of each character
-    
-    // First pass: Count frequency of each character
+    int freq[256] = {0};  
+    string nonRepeated = "";  
     for (int i = 0; i < str.size(); i++) {
-        freq[(int)str[i]]++;
+        freq[str[i]]++;
     }
-    
-    // Second pass: Collect non-repeating characters
-    string ans = "";
     for (int i = 0; i < str.size(); i++) {
-        if (freq[(int)str[i]] == 1) {
-            ans += str[i];
+        if (freq[str[i]] == 1) {
+            nonRepeated += str[i];  
         }
     }
-    
-    // Output the result
-    cout << "Non-repeating characters: " << ans << endl;
-
-    return 0;
+    if (nonRepeated != "") {
+        cout << "Non-repeated characters: " << nonRepeated << endl;
+    } else {
+        cout << "No non-repeated characters found." << endl;
+    }
+return 0;
 }
-
-
