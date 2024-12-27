@@ -1,1 +1,1 @@
-complex c3;
+  faculty() {}

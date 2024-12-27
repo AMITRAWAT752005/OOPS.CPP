@@ -87,6 +87,7 @@ int main()
     int u;
     cin >> u;
     op.setUnit(u);
+    
 
     int final = op.calc();
     cout << "Your Electricity Bill is : "<<final;
